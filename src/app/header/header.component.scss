@@ -1,0 +1,10 @@
+#header{
+    .link:not(:first-child){
+        margin-left:1rem;
+    }
+    .link.active{
+        button{
+            background-color:orange;
+        }
+    }
+}
