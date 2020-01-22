@@ -1,1 +1,39 @@
-<p>login works!</p>
+<div id="login">
+    <div class="container">
+        <div class="row header">
+            <div class="signin">Sign in</div>
+            <div class="banner">Continue to app</div>
+        </div>
+        <div class="row">
+            <mat-form-field class="email" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="">
+                <button mat-icon-button matSuffix disable>
+                    <mat-icon>email</mat-icon>
+                </button>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="password" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder=""
+                [type]="hide ? 'password' : 'text'"
+                >
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="row footer">
+            <div class="element forgotpassword">
+                <label>Forgot password?</label>
+            </div>
+            <div class="element signin">
+                <button mat-raised-button>Sign in</button>
+            </div>
+        </div>
+    </div>
+
+</div>

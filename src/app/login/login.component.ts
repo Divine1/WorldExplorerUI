@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
+  //hide="";
   constructor() { }
 
   ngOnInit() {
   }
-
+  submit(){
+    console.log("submit me")
+    //console.log("typeeit ",this.typeeit)
+  }
 }

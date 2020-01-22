@@ -1,0 +1,44 @@
+#login{
+    .container{
+        margin: 2rem auto;
+        max-width: 300px;
+        min-width: 240px;  
+        .row{
+            &.header{
+                text-align: center;
+            }
+            .signin{
+                font-size: 1.7rem;
+            }
+            .banner{
+                font-size: 1rem;
+                margin:0.8rem 0;
+            }
+            .email,.password{
+                width:100%;
+            }
+            
+            &.footer{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .forgotpassword{
+                    label{
+                        font-size: 0.875rem;
+                        color:orange;
+                        font-weight: 600;
+                        &:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .signin{
+                    button{
+                        background-color: orange;
+                    }
+                }
+            }
+        }  
+    }
+}
