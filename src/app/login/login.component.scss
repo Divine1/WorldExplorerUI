@@ -1,7 +1,8 @@
 #login{
     .container{
         margin: 2rem auto;
-        max-width: 300px;
+        padding: 0 2rem;
+        max-width: 400px;
         min-width: 240px;  
         .row{
             &.header{
@@ -33,7 +34,7 @@
                         }
                     }
                 }
-                .signin{
+                .element{
                     button{
                         background-color: orange;
                     }
